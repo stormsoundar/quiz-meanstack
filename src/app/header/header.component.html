@@ -1,0 +1,83 @@
+<ngx-spinner type = "ball-clip-rotate-multiple"></ngx-spinner>
+<div id="app">
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <a class="navbar-brand mr-4">Scholar Quiz</a>
+    <button
+      class="navbar-toggler"
+      (click)="collapsed = !collapsed"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarNav"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div
+      class="collapse navbar-collapse"
+      [class.collapse]="collapsed"
+      (window:resize)="('collapsed = true')"
+      id="navbarNav"
+    >
+      <ul class="navbar-nav mr-auto">
+        <li
+          *ngIf="userIsAuthenticated"
+          class="nav-item mr-4"
+          routerLink="home"
+          routerLinkActive="active"
+        >
+          <a class="nav-link" style="cursor: pointer">Home</a>
+        </li>
+        <li
+          *ngIf="userIsAuthenticated"
+          class="nav-item mr-4"
+          routerLink="quiz"
+          routerLinkActive="active"
+        >
+          <a class="nav-link" style="cursor: pointer">Quiz</a>
+        </li>
+        <li
+          *ngIf="userIsAuthenticated"
+          class="nav-item mr-4"
+          routerLink="score"
+          routerLinkActive="active"
+        >
+          <a class="nav-link" style="cursor: pointer">Scoreboard</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav">
+        <li
+          *ngIf="!userIsAuthenticated"
+          class="nav-item mr-4"
+          routerLink="/login"
+          routerLinkActive="active"
+        >
+          <a class="nav-link" style="cursor: pointer">Sign In</a>
+        </li>
+        <li
+          *ngIf="!userIsAuthenticated"
+          class="nav-item mr-4"
+          routerLink="/register"
+          routerLinkActive="active"
+        >
+          <a class="nav-link" style="cursor: pointer">Sign Up</a>
+        </li>
+        <li
+          *ngIf="userIsAuthenticated"
+          class="nav-item mr-4"
+          routerLinkActive="active"
+        >
+          <a class="nav-link" style="cursor: pointer"
+            >Hi, {{ this.userName }}</a
+          >
+        </li>
+        <li
+          *ngIf="userIsAuthenticated"
+          class="nav-item mr-4"
+          routerLinkActive="active"
+          (click)="onLogout()"
+        >
+          <a class="nav-link" style="cursor: pointer">Logout</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>

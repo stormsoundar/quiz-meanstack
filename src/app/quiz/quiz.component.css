@@ -1,0 +1,52 @@
+#main {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.question,
+.form-check-label,
+.testSubmitted {
+  font-family: "Cairo", sans-serif;
+}
+
+.form-check-label:hover {
+  transform: scale(1.1);
+}
+
+.card-header {
+  border: 2px solid gray;
+}
+
+.list-group-item:hover {
+  background-color: lightgray;
+}
+
+.btn-success,
+.btn-danger {
+  font-family: "Cairo", sans-serif;
+  font-size: large;
+}
+
+.answer {
+  text-align: center;
+}
+
+.main1 {
+  font-family: "Cairo", sans-serif;
+}
+
+.container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.testSubmitted {
+  text-align: center;
+  margin-bottom: -60px;
+}
+
+.img {
+  height: 250px;
+  width: auto;
+  margin: 0px;
+}

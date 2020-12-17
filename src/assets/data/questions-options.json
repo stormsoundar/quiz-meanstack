@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "question": "What is the capital of Belgium?",
+    "option1": "Antwerp",
+    "option2": "Ghent",
+    "option3": "Brussels",
+    "option4": "Charleroi",
+    "answer": "option3"
+  },
+  {
+    "id": 2,
+    "question": "What is the capital of Australia?",
+    "option1": "Sydney",
+    "option2": "Canberra",
+    "option3": "Melbourne",
+    "option4": "Brisbane",
+    "answer": "option2"
+  },
+  {
+    "id": 3,
+    "question": "What is the capital of Bulgaria?",
+    "option1": "Plovdiv",
+    "option2": "Sofia",
+    "option3": "Varna",
+    "option4": "Burgas",
+    "answer": "option2"
+  },
+  {
+    "id": 4,
+    "question": "What is the capital of India?",
+    "option1": "Chennai",
+    "option2": "Mumbai",
+    "option3": "Kolkata",
+    "option4": "New Delhi",
+    "answer": "option4"
+  },
+  {
+    "id": 5,
+    "question": "What is the capital of Pakistan?",
+    "option1": "Gujranwala",
+    "option2": "Karachi",
+    "option3": "Islamabad",
+    "option4": "Lahore",
+    "answer": "option3"
+  },
+  {
+    "id": 6,
+    "question": "What is the capital of Sri Lanka?",
+    "option1": "Moratuwa",
+    "option2": "Colombo",
+    "option3": "Negombo",
+    "option4": "Kandy",
+    "answer": "option2"
+  },
+  {
+    "id": 7,
+    "question": "What is the capital of United State of America?",
+    "option1": "New York",
+    "option2": "California",
+    "option3": " Florida",
+    "option4": "Washington, D.C.",
+    "answer": "option4"
+  },
+  {
+    "id": 8,
+    "question": "What is the capital of Canada?",
+    "option1": "Ottawa",
+    "option2": "Quebec",
+    "option3": "Northwest Territories",
+    "option4": "Ontario",
+    "answer": "option1"
+  },
+  {
+    "id": 9,
+    "question": "What is the capital of United Kingdom?",
+    "option1": "Birmingham",
+    "option2": "Bristol",
+    "option3": "London",
+    "option4": "Nottingham",
+    "answer": "option3"
+  },
+  {
+    "id": 10,
+    "question": "What is the capital of United Arab Emirates?",
+    "option1": "Abu Dhabi",
+    "option2": "Sharjah",
+    "option3": "Dubai",
+    "option4": "Ajman",
+    "answer": "option1"
+  }
+]

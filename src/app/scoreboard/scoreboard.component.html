@@ -1,0 +1,54 @@
+<ngx-spinner type="ball-clip-rotate-multiple"></ngx-spinner>
+<div class="main">
+  <div class="start-quiz" *ngIf="emptyResult">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-md-10 col-sm-12 col-lg-10 offset-md-1 offset-lg-1">
+          <div class="card jumbotron">
+            <img src="assets/images/9.jpg" class="card-img-top" alt="test" />
+            <div class="card-body">
+              <h3 class="card-title">Test not Completed!</h3>
+              <h5 class="card-text">Please, Start your test first.</h5>
+              <button
+                type="button"
+                routerLink="/quiz"
+                class="btn btn-success btn-lg"
+              >
+                Start Your Quiz
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="main" *ngIf="!emptyResult">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-8 offset-md-2">
+        <ul class="list-group">
+          <li class="list-group-item list-group-item-dark">
+            <h2><u>Scoreboard</u></h2>
+          </li>
+          <li class="list-group-item list-group-item-primary">
+            <h5 class="mt-2">
+              Total Questions: {{ this.totalQuestions | number }}
+            </h5>
+          </li>
+          <li class="list-group-item list-group-item-warning">
+            <h5 class="mt-2">
+              Total Answered: {{ this.totalAnswered | number }}
+            </h5>
+          </li>
+          <li class="list-group-item list-group-item-success">
+            <h5 class="mt-2">Right Answers: {{ this.rightAnswer | number }}</h5>
+          </li>
+          <li class="list-group-item list-group-item-danger">
+            <h5 class="mt-2">Wrong Answers: {{ this.wrongAnswer | number }}</h5>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

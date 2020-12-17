@@ -1,0 +1,20 @@
+.card {
+ margin-top: 20px;
+ align-items: left;
+}
+
+.card-title {
+ text-align: center;
+}
+
+.row {
+ font-family: "Cairo", sans-serif;
+}
+
+.text-danger {
+ font-size: small;
+}
+
+.spinner-border {
+ text-align: center;
+}

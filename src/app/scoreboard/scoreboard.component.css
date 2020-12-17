@@ -1,0 +1,20 @@
+li {
+  text-align: center;
+}
+
+.main {
+  font-family: "Cairo", sans-serif;
+}
+
+.container {
+  padding-top: 20px;
+}
+
+.card-img-top {
+  height: 300px;
+  margin-top: -15px;
+}
+
+.card-body {
+  text-align: center;
+}

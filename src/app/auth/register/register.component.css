@@ -1,0 +1,17 @@
+.card {
+ align-items: left;
+ margin-top: 20px;
+}
+
+.card-title {
+ /* margin-top: -40px; */
+ text-align: center;
+}
+
+.row {
+ font-family: "Cairo", sans-serif;
+}
+
+.text-danger {
+ font-size: small;
+}

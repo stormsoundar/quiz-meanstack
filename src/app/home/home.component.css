@@ -1,0 +1,21 @@
+.start {
+  text-align: center;
+}
+
+.main {
+  font-family: "Cairo", sans-serif;
+  margin-top: 20px;
+}
+
+.carousel-cell{
+ height: 100%;
+ width: 100%;
+}
+
+#slider {
+ margin: auto;
+}
+
+.card-body {
+  text-align: center;
+}

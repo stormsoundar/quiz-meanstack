@@ -1,0 +1,114 @@
+<ngx-spinner type="ball-clip-rotate-multiple"></ngx-spinner>
+<div id="main" *ngIf="emptyResult">
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+    <div class="card pt-1 pb-1">
+      <div class="card-body">
+        <form #questionTest="ngForm">
+          <div *ngFor="let ques of questions; let i = index">
+            <div class="card-header pt-3">
+              <div class="question">
+                <h5 class="quest">{{ ques.id }}.{{ ques.question }}</h5>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="options">
+                <ul class="list-group">
+                  <li class="list-group-item">
+                    <div class="form-check">
+                      <label class="form-check-label">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="{{ ques.id }}"
+                          value="option1"
+                          [(ngModel)]="ques.selected"
+                        />a) {{ ques.option1 }}
+                      </label>
+                    </div>
+                  </li>
+                  <li class="list-group-item">
+                    <div class="form-check">
+                      <label class="form-check-label">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="{{ ques.id }}"
+                          value="option2"
+                          [(ngModel)]="ques.selected"
+                        />b) {{ ques.option2 }}
+                      </label>
+                    </div>
+                  </li>
+                  <li class="list-group-item">
+                    <div class="form-check">
+                      <label class="form-check-label">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="{{ ques.id }}"
+                          value="option3"
+                          [(ngModel)]="ques.selected"
+                        />c) {{ ques.option3 }}
+                      </label>
+                    </div>
+                  </li>
+                  <li class="list-group-item">
+                    <div class="form-check">
+                      <label class="form-check-label">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="{{ ques.id }}"
+                          value="option4"
+                          [(ngModel)]="ques.selected"
+                        />d) {{ ques.option4 }}
+                      </label>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row mt-4">
+            <div class="col-12" style="justify-content: center; display: flex">
+              <button
+                type="button"
+                class="btn btn-danger btn-lg mr-4"
+                (click)="cancelTest()"
+              >
+                Cancel
+              </button>
+              <button
+                type="submit"
+                class="btn btn-success btn-lg"
+                (click)="submitTest()"
+                routerLink="/score"
+              >
+                Submit
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="testSubmitted" *ngIf="!emptyResult">
+   <div class="container">
+    <div class="card jumbotron mb-3">
+      <div class="row no-gutters">
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+          <img src="assets/images/8.jpg" class="img" alt="success" />
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+          <div class="card-body">
+            <h3 class="card-title">Test Completed</h3><br>
+            <h5 class="card-text">You have already completed your Quiz Test!</h5><br>
+            <a routerLink="/score" class="btn btn-primary btn-lg">Go to see you Scoreboard</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
